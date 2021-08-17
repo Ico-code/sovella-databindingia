@@ -1,0 +1,14 @@
+<div id="container">
+    <h1>
+        Binding values using angular
+    </h1>
+    <hr>
+    <input
+    type="text"
+    class="username-input"
+    [(ngModel)]="username">
+    <p>
+        {{ username }}
+    </p>
+    <button [disabled]="!username" (click)="resetusername()">Reset username</button>
+</div>
